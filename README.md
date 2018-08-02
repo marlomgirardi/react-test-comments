@@ -1,2 +1,3 @@
-# react-test-comments
-Created with CodeSandbox
+# React Test - Comments
+
+Just testing ReactJS
