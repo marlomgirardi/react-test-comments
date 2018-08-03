@@ -74,7 +74,7 @@ class App extends Component {
               className="btn btn-primary"
               onClick={() => this.auth('google')}
             >
-              Entre com o Google para comentar
+              Log In with Google
             </button>
           </div>
         )}

@@ -1,13 +1,14 @@
 import firebase from 'firebase'
 import Rebase from 're-base'
 
+// TODO: set your firebase config
 const app = firebase.initializeApp({
-  apiKey: '',
+  /*apiKey: '',
   authDomain: 'PROJECTID.firebaseapp.com',
   databaseURL: 'https://PROJECTID.firebaseio.com',
   projectId: 'PROJECTID',
   storageBucket: 'PROJECTID.appspot.com',
-  messagingSenderId: ''
+  messagingSenderId: ''*/
 })
 
 const base = Rebase.createClass(app.database())
