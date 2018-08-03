@@ -2,7 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 
-import base from './base'
+import base, { auth, providers } from './base'
 
-const rootElement = document.getElementById('root')
-ReactDOM.render(<App base={base} />, rootElement)
+ReactDOM.render(
+  <App base={base} auth={auth} providers={providers} />,
+  document.getElementById('root')
+)

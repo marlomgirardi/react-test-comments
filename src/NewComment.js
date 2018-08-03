@@ -19,12 +19,14 @@ class NewComment extends Component {
   render() {
     return (
       <div className="row">
-        <textarea
-          ref="comment"
-          placeholder="Comente!"
-          className="form-control mt-4"
-          onKeyDown={this.handleEnter}
-        />
+        <div className="col-sm-12">
+          <textarea
+            ref="comment"
+            placeholder="Leave your comment!"
+            className="form-control mt-4"
+            onKeyDown={this.handleEnter}
+          />
+        </div>
       </div>
     )
   }

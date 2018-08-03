@@ -26,6 +26,18 @@ describe('<App />', () => {
 
   it('shows NewComment', () => {
     const wrapper = shallow(<App base={base} />)
+    expect(wrapper.find('NewComment').length).toBe(0)
+
+    wrapper.setState({
+      isLoggedIn: true,
+      user: {
+        photoURL: '',
+        displayName: 'User Test',
+        uid: 'uid...123',
+        email: 'email@email.com'
+      }
+    })
+
     expect(wrapper.find('NewComment').length).toBe(1)
   })
 
